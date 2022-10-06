@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.abc {
+  display: flex;
+}
+
+.navbar {
+  align-items: center;
+  justify-content: space-around;
+  height: 60px;
+}
+
+.center li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+.center ul a,
+.logo a,
+.navbar .btn a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navbar .btn a {
+  color: #fff;
+}
+
+.center ul a:hover {
+  text-decoration: underline;
+}
+
+.navbar .btn {
+  padding: 10px 30px;
+  border-radius: 40px;
+  background-color: #002f58;
+  color: #fff;
+}
+
+.navbar .btn {
+  align-items: center;
+}
+
+.navbar .btn .call {
+  height: 30px;
+  width: 30px;
+  background: white;
+  color: #002f58;
+  border-radius: 50%;
+  position: relative;
+  right: 20px;
+}
+
+.navbar .btn .call i {
+  position: relative;
+  left: 8px;
+  top: 5px;
+}
+
+.banner {
+  background-image: url("../images/banner.jpg");
+  width: 100%;
+  height: 550px;
+  background-size: cover;
+  color: #fff;
+}
+
+.content {
+  position: relative;
+  top: 150px;
+  margin-left: 83px;
+}
+
+.content h1 {
+  width: 20%;
+  line-height: 1.4;
+}
+
+.content p {
+  width: 400px;
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+.content .btn2 {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 50px;
+  border-radius: 40px;
+  margin-top: 30px;
+  transition: 0.3s linear;
+}
+
+.content .btn2:hover {
+  background-color: #fff;
+  color: #000000;
+  font-weight: bold;
+}
+
+.content .btn3 {
+  border-radius: 20px;
+  margin: 30px 0 0 10px;
+  border: none;
+}
+
+.btnn {
+  align-items: center;
+}
+
+.btnn .fa {
+  font-size: 15px;
+  padding: 10px 25px;
+  border-radius: 70px;
+}
+
+.down {
+  background-color: #000000;
+  height: auto;
+}
+
+.dentist {
+  height: 130px;
+  width: 1050px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 65px;
+}
+
+.information {
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: 40px;
+}
+
+.information .line {
+  border-left: 2px solid gray;
+  height: 70px;
+}
+
+.nearby h3 {
+  width: 127px;
+}
+
+.information .date {
+  line-height: 1.8;
+}
+
+.search {
+  height: 50px;
+  width: 50px;
+  background: #5022d1;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.search i {
+  position: relative;
+  top: 16px;
+  left: 16px;
+}
+
+.card {
+  justify-content: center;
+  gap: 40px;
+}
+
+.card .img {
+  height: 465px;
+  width: 283px;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.card .img img {
+  height: 360px;
+  width: 265px;
+  margin: 8px;
+  border-radius: 15px;
+}
+
+.card .img p {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.card .img .arrow {
+  margin: 10px auto;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  background: #5022d1;
+  border-radius: 50%;
+}
+
+.card .img .arrow i {
+  position: relative;
+  top: 16px;
+  color: #fff;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  margin-top: 10%;
+}
+
+footer p {
+  margin: 2% auto;
+  line-height: 1.8;
+  width: 1050px;
+}
+
+.count {
+  justify-content: space-evenly;
+}
+
+.count span {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 425px) {
+  .logo h1 {
+    font-size: 22px;
+  }
+
+  .btn {
+    position: relative;
+    right: 40px;
+  }
+
+  .dentist {
+    display: none;
+  }
+
+  .banner {
+    height: 620px;
+  }
+
+  .content p {
+    width: 185px;
+  }
+
+  .card .img {
+    margin: 0 auto;
+  }
+
+  .content h1,
+  .content p {
+    position: relative;
+    bottom: 100px;
+  }
+
+  .btnn {
+    position: relative;
+    bottom: 89px;
+    right: 20%;
+  }
+
+  .center ul,
+  .information .line {
+    display: none;
+  }
+
+  .card,
+  .count,
+  .btnn {
+    flex-direction: column;
+  }
+
+  footer h3 {
+    margin-top: 3%;
+  }
+
+  footer p,
+  footer h3,
+  .count {
+    width: 100%;
+    margin: 10% auto;
+  }
+
+  .down {
+    padding-bottom: 1px;
+  }
+
+  .count {
+    line-height: 1.8;
+  }
+}
